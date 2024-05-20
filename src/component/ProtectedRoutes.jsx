@@ -7,7 +7,7 @@ const ProtectedRoutes = (props) => {
 
     const navigate =useNavigate();
     useEffect(()=>{
-        let token = Cookies.get('token');
+        let token = localStorage.getItem('token');
         console.log(token)
         if(!token) {
             navigate('/');
