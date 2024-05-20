@@ -1,0 +1,1039 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  width: 100%;
+  background-color: #dfe6e9;
+  box-sizing: border-box;
+}
+
+body ruler {
+  display: none;
+}
+
+.login_container{
+    height: 300px;
+    background: skyblue;
+    display: flex;
+    width: 250px;
+    border-radius: 10px;
+    padding: 23px;
+    justify-content: center;
+    position: fixed;
+    right: 60px;
+    top: 125px;
+}
+
+
+.login_form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  width: 245px;
+}
+
+.login_form,h1{
+  color: darkblue;
+  text-align: center;
+}
+
+.login_input{
+  height: 12px;
+  border: 5px 0;
+  border: 5px;
+  font-size: 15px;
+  text-align: left;
+  border-radius: 48px;
+  color: white;
+  background: gray;
+  border: none;
+  padding: 15px;
+}
+
+input::placeholder{
+  color: rgb(187, 184, 184);
+  font-size: 15px;
+}
+
+.btn_secton{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.btn_secton,p{
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+.btn{
+  width: 100px;
+  height: 30px;
+  background: blue;
+  color: white;
+  padding: 3px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  
+}
+
+.btn_secton{
+  margin-top: 2px;
+}
+
+.nav_bar
+{ 
+    /* position: fixed; */
+    /* top: 0px; */
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    background: skyblue;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 5px;
+    margin-bottom: 0pxs;
+}
+.nav_bar ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.nav_ul li{
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+  color: darkblue;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav_bar ul li:active{
+  color: black;
+}
+
+
+.welcome_container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 100px;
+}
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 20px;
+}
+
+.banner img{
+  height: 290px;
+}
+
+.banner h2{
+  font-size: 40px;
+}
+
+#lib_name{
+  color: skyblue;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.footer_bar{
+  position: fixed;
+  bottom: 0px;
+  background: skyblue;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  
+}
+#profile{
+  display: flex;
+  flex-direction: row;
+  height: 10px;
+  background-color:blanchedalmond;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+}
+
+.home{
+  /* position: fixed; */
+  /* left: 0; */
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+}
+
+.home .leftsection{
+  position: fixed;
+  top: 60px;
+  width: 20%;
+  height: 100vh;
+  color: white;
+  background-color: gray;
+  padding: 0 10px;
+}
+
+.home .rightsection{
+  width: 80%;
+  height: 100vh;
+  color:orangered;
+  margin: auto;
+  padding:20;
+  margin-left :20%;
+}
+
+
+#card{
+  height: 200px;
+  background-color: aquamarine;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  gap: 5px;
+  border-radius: 5px;
+}
+
+#card img{
+  height: 100px;
+}
+
+#card h1{
+  font-size: 20px;
+  color: black;
+}
+
+#card p{
+  font-size: 10px;
+}
+
+#card button{
+  border-radius: 5px;
+  width: 85px;
+  height: 20px;
+}
+
+
+
+.welcome_container{
+  position: fixed;
+  left: -50px;
+}
+.Loginform{
+  position: fixed;
+  right: 75px;
+}
+
+
+/* form css */
+
+.component {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  gap: 5px;
+  box-shadow: #81ecec 0px 5px 15px;
+
+}
+
+.component input[type="text"], .component input[type="password"]{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.component select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.component button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #40739e;
+  cursor: pointer;
+}
+
+.component button:hover {
+
+  background-color: #487eb0;
+}
+
+/* .component button:nth-child(4) {
+  
+} */
+
+
+
+.component #create_btn {
+  background-color: #28a745;
+}
+
+.component a {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+}
+
+
+/* book card css */
+/* signup form */
+
+.card {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0PX;
+  color: black;
+  text-align: left;
+  
+}
+
+
+
+.card img {
+  width: 100%;
+  width: 200px;
+  width: 98%;
+  height: 146px;
+
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h2 {
+  font-size: 18px;
+}
+
+.card-content p {
+ margin-bottom: 13px; 
+}
+
+
+.availabe-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.availabe-btn button{
+  height: 41px;
+  width: 105px;
+  border-radius: 32px;
+  border: none;
+  color: white;
+  font: 20px;  
+}
+
+#issue{
+  background-color: rgb(13, 124, 252);
+}
+#reading{
+  background-color: rgb(255, 108, 10);
+}
+
+#book_name{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#book_category {
+
+  text-align: left;
+  text-align: left;
+  color: gray;
+}
+
+#book_writer{
+  color: gray;
+}
+
+
+/* usermenu */
+
+.sidebar_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 75%;
+  height: 35px;
+  background-color: #6148d3;
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+.sidebar_button:active{
+  background-color: #341f97
+}
+.sidebar_button:focus{
+  background-color: #341f97
+}
+
+#username{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#username p {
+  font-size: 40px;
+  color: white;
+}
+
+#username img {
+
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 50%;
+}
+
+
+
+#first_row{
+  list-style: none;
+  height: 100px;
+  width: 100%;
+  background-color: #222f3e;
+  
+}
+
+.itemcard{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 175px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: #222f3e;
+  color: white;
+  gap: 5px;
+}
+
+.itemcard{
+  font-size: 20px;
+}
+
+.itemcard li{
+  font-size: 30px;
+} 
+
+.row_row{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  gap:10px;
+}
+
+
+
+
+
+/* Toggle Button */
+
+.toggle_Button{
+  position: fixed;
+  right: 5px;
+}
+
+.toggle_Button button{
+  width: 100px;
+  height: 35px;
+  background-color: green;
+}
+
+/* :horizontalbutton */
+
+.horizontal_btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #341f97;
+  color: white;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  list-style: none;
+  font-size: 25px;
+}
+
+
+
+.display_section{
+  justify-content: center;
+  height: auto;
+  padding: 10px;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+}
+.display_sub_section{
+  display: flex;
+  gap: 10px
+}
+
+
+
+a{
+  text-decoration: none;
+}
+
+/* form{
+  width: 449px;
+  height: 346px;
+  background: #6c5ce7;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-radius: 14px;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* form css */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+
+
+.form_container {
+	width:100%;
+  height: auto;
+	margin:0 auto;
+	position:relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  border-radius: 22px;
+  height: 47px;
+  font-size: 20px;
+
+}
+
+
+
+
+/* #contact input[type="text"], 
+#contact input[type="email"], 
+#contact input[type="tel"], 
+#contact input[type="url"], 
+#contact textarea, 
+#contact button[type="submit"] 
+{ font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; } */
+
+#contact button[type="submit"] 
+{ font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+  text-align: center;
+  width: 400px;
+  height: auto;
+}
+
+#cross_btn{
+  align-items:right;
+  position: relative;
+  left: 119px;
+  top: -18px;
+  cursor: pointer;
+}
+
+#lib_cross_btn{
+  align-items:right;
+  position: relative;
+  left: 171px;
+  top: -21px;
+  cursor: pointer;
+}
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+/* #contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+  font-size: 15px;
+} */
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:50%;
+  border-radius: 15px;
+	border:none;
+	background:#0CF;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:20px;
+}
+#titlebox{
+  height: 88px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+
+
+
+/* new menu */
+
+.menu_container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.left_sidebar{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 25%;
+  background-color: #222f3e;
+  height: 100vh;
+  padding: 20px;
+  list-style: none;
+  position: sticky;
+  top: 0;
+}
+
+.right_sidebar{
+  box-sizing: border-box;
+ width: 75%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: flex-start;
+ padding: 10px;
+ border: 1px solid black;
+}
+
+/* book */
+
+.book_card{
+  width: 200px;
+  height: 300px;
+  /* background-color: red; */
+  /* border-radius: 35px; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.product_container{
+  padding:0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.product_container h1{
+  font-size: 22px;
+}
+.product_container p{
+  font-size: 13px;
+}
+
+.availabe{
+  margin: 0;
+  background-color: red;
+  position: relative;
+  bottom: 0px;
+  height: 10xp;
+}
+
+/* .id{
+  position: relative;
+  left: -72px;
+  z-index: -1;
+  font-size: 15px;
+} */
+
+
+.book_card_top{
+  height: 10%;
+  background-color: red;
+}
+
+.book_card_mid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  background-color: white;
+}
+
+
+.book_card_mid  img{
+  height:40%;
+  width: auto;
+}
+
+
+.book_card_btm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  background-color: #32ff7e;
+  font-size: 20px;
+}
+
+.book_card_btm_min{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  background-color: #f12805;
+  font-size: 20px;
+}
+
+.book_card_btm p{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.book_card_btm_min p{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+
+/* bookfiler */
+
+.book_filter{
+  height: 200px;
+  width: 100%;
+  color: white;
+}
+
+.book_filer_subSection{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 0px;
+}
+
+.book_filer_subSection div{
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.book_filer_subSection p{
+  font-size: 20px;
+  
+}
+
+
+.searchbar{
+  display: flex;
+  flex-direction: row;
+}
+
+.searchdata{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+  gap: 2px;
+}
+
+.year_qty{
+  display: flex;
+  flex-direction: row;
+}
+.year_qty input{
+  width: 50%;
+  border: 1px solid gray;
+  border-radius: 0;
+}
+
+.year_qty select{
+  width: 50%;
+  border-radius: 0;
+}
+
+select{
+  width: 100%;
+  height: 47px;
+  border-radius: 0;
+}
+
+.display-lower{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.display-left{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 30%;
+  height: 100%;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.display-right{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width:100%;
+  height:100%;
+  border: 1px solid black;
+}
+
+.display-left-upper{
+    align-items: center;
+    width: 100%;
+    height: 35%;
+    background-color: white;
+    border-radius: 27px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.display-left-lower{
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  border-radius: 27px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+  align-items: center;
+  gap: 5px;
+}
+
+.display-right-header{
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+/* booklist */
+.book-list{
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.book-list div{
+  font-size: 17px;
+}
+
+.book-list div input{
+  border: 1px solid gray;
+  width: 50px;
+  height: 18px;
+  font-size: 17px;
+  border-radius: 0px;
+}
+
+.update{
+  font-size: 17px;
+  background-color: blue;
+  overflow: hidden;
+}
+
+.display-right-list-booklist{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+
+.mainDisplay{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.upper{
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  border-radius: 27px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+  align-items: center;
+  gap: 5px;
+}
+
+.display{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.ManageUser{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+.dispay-upper{
+  height: 35%;
+  background-color: white;
+  border-radius: 27px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+  align-items: center;
+  gap: 5px;
+}
+
+
+.logout{
+  margin: auto;
+  position: fixed;
+  bottom: 10px;
+}
