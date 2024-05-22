@@ -12,32 +12,35 @@ const columns = [
   { field: 'status',headerName: 'Status',type: 'string', width: 120},
 ];
 
-let rows = [];
+// let rows = [];
 
-const fetchAllStudents=async()=>{
-  const getAllStudent_url=`http://localhost:8000/api/user/students`
-  const res= await axios.get(getAllStudent_url);
-  transformedArray(res.data)
-}
 
-const transformedArray = (originalArray)=>{
-  let newarray=originalArray.map((obj, index) => ({
-    id: index + 1,
-    fullName: obj.name,
-    mobile: obj.mobile,
-    books:obj.borrowedBooks.length,
-    email:obj.email,
-    status:obj.IsBlocked?"Blocked":"Active"
-  }));
-  rows=newarray;
-};
 
 
 export default function StudentList() {
+  const[rows,setRows] = useState([]);
+
+  
+  const fetchAllStudents=async()=>{
+    const getAllStudent_url=`http://localhost:8000/api/user/students`    
+    const res= await axios.get(getAllStudent_url);
+    setRows(transformedArray(res.data));
+  }
+
+  const transformedArray = (originalArray)=>{
+    return originalArray.map((obj, index) => ({
+      id: index + 1,
+      fullName: obj.name,
+      mobile: obj.mobile,
+      books:obj.borrowedBooks.length,
+      email:obj.email,
+      status:obj.IsBlocked?"Blocked":"Active"
+    }));
+  };
 
   useEffect(()=>{
     fetchAllStudents();
-  },[]);
+  },[rows]);
 
 
   return (
@@ -55,3 +58,4 @@ export default function StudentList() {
     </div>
   );
 }
+

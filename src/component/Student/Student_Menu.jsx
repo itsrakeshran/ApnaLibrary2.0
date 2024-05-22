@@ -35,14 +35,12 @@ const Student_Menu = () => {
                         <div className='menu_container'>
                                 <div className='left_sidebar'>
                                         <ProfileCard name={userData.name} role={userData.role}></ProfileCard>
-                                        {/* <li id="username">
-                                                <img src="https://source.unsplash.com/400x400?profile" alt="" height="50px" />
-                                                <p >Hii {userData.name}</p>
-                                                <p>{userData.role}</p>
-                                        </li>  */}
+                                        {/* onClick={()=>setShowBookfilter(false)}
+                                        onClick={()=>setShowBookfilter(true)} */}
+
                                         <li><hr /></li>
-                                        <Link to={"/student_menu"}><li onClick={()=>setShowBookfilter(false)}><p className='sidebar_button'><RiDashboard3Line />Dash Board<IoMdArrowDropright/></p></li></Link>
-                                        <Link to={"/student_menu/books"}> <li onClick={()=>setShowBookfilter(true)}><p className='sidebar_button'><LiaBookSolid />Show Books<IoMdArrowDropright/></p></li></Link>      
+                                        <Link to={"/student_menu"}><li ><p className='sidebar_button'><RiDashboard3Line />Dash Board<IoMdArrowDropright/></p></li></Link>
+                                        <Link to={"/student_menu/books"}> <li ><p className='sidebar_button'><LiaBookSolid />Show Books<IoMdArrowDropright/></p></li></Link>      
                                         <div className="logout">
                                                 <LogoutButton name={"Logout"} /> 
                                         </div>
@@ -50,7 +48,7 @@ const Student_Menu = () => {
 
                                 <div className='right_sidebar'>
                                         <Routes>
-                                                <Route path='' element={<Student_Dashboard useremail={userData.email}/>}></Route>
+                                                <Route path='' element={<Student_Dashboard/>}></Route>
                                                 <Route path='books' element={<Books bookdata={bookdata}/>}></Route>    
                                         </Routes>
                                                 

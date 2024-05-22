@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import { IoMdCloseCircleOutline } from "react-icons/io";
+import axios from 'axios';
+
+
+
 
 const DeleteLibrarianForm = ({click}) => {
     const [formData, setFormData] = useState({
@@ -14,14 +18,15 @@ const DeleteLibrarianForm = ({click}) => {
         e.preventDefault();
         console.log(formData);
 
-        const api_url="http://localhost:5000/librarian"
+        const api_url="http://localhost:5000/librarian"   
+        await axios.delete(api_url,formData,{withCredentials:true})
         // fetch add_student api
-        const response = await fetch(api_url, {
-            method: "DELETE",
-            mode: "cors",
-            headers: {"Content-Type": "application/json",},
-            body: JSON.stringify(formData),
-        });
+        // const response = await fetch(api_url, {
+        //     method: "DELETE",
+        //     mode: "cors",
+        //     headers: {"Content-Type": "application/json",},
+        //     body: JSON.stringify(formData),
+        // });
 
         setFormData({EmpID:''});
 

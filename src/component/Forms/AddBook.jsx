@@ -23,7 +23,7 @@ const AddBook = ({click}) => {
         console.log(formData)
         const api_url=`http://localhost:8000/api/book`;
         try {
-            const res = await axios.post(api_url, formData);
+            const res = await axios.post(api_url, formData,{withCredentials:true});
             window.alert("Book Added Successfully");
             setFormData({
                 title: "",

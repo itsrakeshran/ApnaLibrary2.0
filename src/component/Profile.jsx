@@ -13,7 +13,7 @@ import { red } from '@mui/material/colors';
 export default function ProfileCard({name,role}) {
 
   return (
-    <Card alignContent="center" sx={{ maxWidth: 345, maxHeight:125}}>
+    <Card  sx={{ maxWidth: 345, maxHeight:125}}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">

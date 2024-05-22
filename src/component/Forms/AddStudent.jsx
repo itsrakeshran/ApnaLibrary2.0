@@ -20,7 +20,7 @@ const StudentForm = ({click}) => {
         console.log(formData)
        try{
         const api_url="http://localhost:8000/api/user"
-        const res= await axios.post(api_url,formData);
+        const res= await axios.post(api_url,formData,{withCredentials:true});
         console.log(res);
         console.log(res.statusText);
             if(res.statusText === 'OK'){

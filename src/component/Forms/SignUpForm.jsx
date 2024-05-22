@@ -77,8 +77,8 @@ const SignForm = () => {
                 const response = await axios.post(loginUrl, data);
                 localStorage.setItem("token",response.data.token);
                 localStorage.setItem("role",response.data.role);
+                localStorage.setItem("useremail",response.data.email)
                 Cookies.set('token', response.data.token);
-                Cookies.set('role', response.data.role);
                 setRole(response.data.role)
             }catch(err){
                 console.warn({"Login Eroor": err})
@@ -91,9 +91,7 @@ const SignForm = () => {
                 let data={email:email,password:password}
                 console.log(data);
                 let setpassword_url='http://localhost:8000/api/auth'
-
                 const res=await axios.post(setpassword_url,data)
-
             }catch(err){
                 console.warn({"Set Password Err": err})
             }

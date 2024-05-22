@@ -4,23 +4,24 @@ import { LiaBookSolid } from "react-icons/lia";
 import axios from 'axios';
 
 
-const Student_Dashboard = ({useremail}) => {
-  const[issueBook, setIssueBook]=useState(0);
-
+const Student_Dashboard = () => {
+  
+const[issueBook, setIssueBook]=useState(0);
+  const email=localStorage.getItem("useremail");
   useEffect(()=>{
     fetchIssuedBook();
   },[issueBook])
 
   const fetchIssuedBook = async()=>{
     const api_url=`http://localhost:8000/api/user/chekdues`;
-    const data={email:useremail}
+    const data={email}
     try {
-        const res = await axios.post(api_url,data);
+        const res = await axios.post(api_url,data,{withCredentials:true});
         setIssueBook(res.data)
     } catch (error) {
-        console.error("Issue Book fetch:", error.message);
+        console.error("Fetch dues Issue:", error.message);
     }
-}
+  }
 
   return (
     <div>
@@ -33,4 +34,4 @@ const Student_Dashboard = ({useremail}) => {
   )
 }
 
-export default Student_Dashboard
+export default Student_Dashboard;

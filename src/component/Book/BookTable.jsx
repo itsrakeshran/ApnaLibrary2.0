@@ -13,9 +13,9 @@ export default function BasicTable() {
     const[bookdata,setBookdata]=React.useState([]);
 
     async function fetchBookData(){
+      try{
         let getAllBook_url="http://localhost:8000/api/book"
-
-        let res= await axios.get(getAllBook_url)
+        let res= await axios.get(getAllBook_url,{withCredentials:true})
         // let response=await fetch(getAllBook_url,{
         //     method:"GET",
         //     mode:'cors'
@@ -23,6 +23,9 @@ export default function BasicTable() {
         // let bookdata=await response.json(response);
         // console.log(bookdata);
         setBookdata([...res.data]);
+      }catch(err){
+        console.error({"Get all books Error":err})
+      }
     }
 
     useEffect(()=>{

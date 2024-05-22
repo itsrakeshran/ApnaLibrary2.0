@@ -7,10 +7,9 @@ const BookDisplay = () => {
     const[bookdata,setBookdata]=useState([]);
 
     async function fetchBookData(){
-
         try {
             const getAllBook_url = "http://localhost:8000/api/book";
-            const res = await axios.get(getAllBook_url);
+            const res = await axios.get(getAllBook_url,{withCredentials:true});
             // Assuming 'setBookdata' is a function to update your state
             setBookdata([...res.data]);
         } catch (error) {
@@ -26,7 +25,7 @@ const BookDisplay = () => {
     return (
         <>
             {
-                bookdata.map((data)=><BookCard key={data.id} data={data}/>)
+                bookdata.map((data)=><BookCard key={data._id} data={data}/>)
             }
         </>
     )
